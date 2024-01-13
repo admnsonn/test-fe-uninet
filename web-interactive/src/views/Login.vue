@@ -70,7 +70,7 @@ export default {
                 if (response.status === 200) {
                     console.log("Login successful");
                     console.log("User data:", response.data);
-                    this.$router.push('/register')
+                    this.$router.push('/pemesanan')
                 } else {
                     console.log("Login failed");
                     console.log("Error:", response.data.error);
@@ -85,7 +85,7 @@ export default {
 
 <style scoped>
 .image-container {
-    background-image: url(/cafe.jpg);
+    background-image: url(/book.jpg);
     background-position: center;
     background-size: cover;
     height: calc(3.2 * 10em);

@@ -33,7 +33,7 @@
                   <br>
                   <button @click="login"
                       class="transition p-2 w-full bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
-                      Daftar <i class="fa fa-send"></i>
+                      Kembali <i class="fa fa-send"></i>
                   </button>
                   <br>
                   <br>
@@ -79,7 +79,7 @@ export default {
 
 <style scoped>
 .image-container {
-  background-image: url(/cafe.jpg);
+  background-image: url(/book.jpg);
   background-position: center;
   background-size: cover;
   height: calc(3.2 * 10em);
