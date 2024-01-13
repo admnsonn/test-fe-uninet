@@ -2,7 +2,8 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import axios from 'axios';
-import { createModal } from 'vue3-modal';
+import firebase from 'firebase'
+import { ref, onUnmounted } from 'vue'
 
 const app = createApp(App)
 
