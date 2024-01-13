@@ -1,6 +1,5 @@
 <template>
-    <div class="p-9 bg-gray-200 h-[100vh] flex items-center justify-center">
-
+    <div class="p-9 bg-gradient-to-r from-purple-500 via-purple-400 to-pink-300 h-[100vh] flex items-center justify-center">
         <div class="bg-white shadow-lg overflow-hidden rounded-xl w-[50%] h-[32rem] z-50">
             <div class="flex space-between items-start">
                 <div class="image-container lg:w-[50%] xs:hidden">
@@ -30,12 +29,10 @@
                         </div>
                     </div>
                     <br>
-                    <br>
                     <button @click="login"
                         class="transition p-2 w-full bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
                         Masuk <i class="fa fa-send"></i>
                     </button>
-                    <br>
                     <br>
                     <div class="text-center mb-3">
                         <span class="text-[12px] text-gray-600">jika anda belum memiliki akun silahkan,</span><router-link
