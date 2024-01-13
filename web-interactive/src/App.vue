@@ -1,27 +1,10 @@
-<template>
-  <div id="app">
-    <router-link to="/login" v-if="!isAuthenticated">Login</router-link>
-    <router-link to="/dashboard" v-if="isAuthenticated">Dashboard</router-link>
-    <button @click="logout" v-if="isAuthenticated">Logout</button>
-
-    <router-view></router-view>
-  </div>
-</template>
-
-<script>
-export default {
-  computed: {
-    isAuthenticated() {
-      return this.$store.getters.isAuthenticated;
-    },
-  },
-  methods: {
-    logout() {
-      this.$store.dispatch('logout');
-    },
-  },
-};
+<script setup>
+import { RouterLink, RouterView } from 'vue-router';
 </script>
+
+<template>
+  <RouterView />
+</template>
 
 <style>
 #app {

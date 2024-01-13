@@ -1,17 +1,18 @@
 // src/router/index.js
-import { createRouter, createWebHistory } from 'vue-router';
-import Login from '@/views/Login.vue';
-import Dashboard from '@/views/Dashboard.vue';
+import { createRouter, createWebHistory } from "vue-router";
 
-const routes = [
-  { path: '/', redirect: '/login' },
-  { path: '/login', component: Login },
-  { path: '/dashboard', component: Dashboard, meta: { requiresAuth: true } },
-];
+import HomeView from "../views/Home.vue";
+import LoginView from "../views/Login.vue";
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: "/",
+      name: 'init',
+      component: localStorage.token != undefined ? HomeView : LoginView
+    },
+  ],
 });
 
 export default router;
