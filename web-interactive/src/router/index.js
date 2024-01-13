@@ -4,6 +4,7 @@ import LoginView from "../views/Login.vue";
 import RegisterView from "../views/Register.vue";
 import PemesananView from "../views/Pemesanan.vue";
 import EditView from "../views/Edit.vue";
+import FilterView from "../views/Filter.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,11 @@ const router = createRouter({
       name: "edit",
       component: EditView,
     },
+    {
+        path: "/filter",
+        name: "filter",
+        component: FilterView,
+      },
   ],
 });
 

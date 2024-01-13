@@ -1,5 +1,5 @@
 <template>
-  <div class="p-9 bg-gray-200 h-[100vh] flex items-center justify-center">
+  <div class="p-9 bg-gradient-to-r from-purple-500 via-purple-400 to-pink-300 h-[100vh] flex items-center justify-center">
 
       <div class="bg-white shadow-lg overflow-hidden rounded-xl w-[50%] h-[32rem] z-50">
           <div class="flex space-between items-start">
